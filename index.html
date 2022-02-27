@@ -54,6 +54,15 @@
 			bigtext {
 				font-size: 23px;
 			}
+			.repo img {
+				transition: transform .2s;
+				image-rendering: pixelated;
+				image-rendering: crisp-edges
+			}
+			.repo img:hover {
+				transform: scale(1.5);
+				opacity:0.7;
+			}
 		</style>
 	</head>
 	<body>
@@ -79,77 +88,80 @@
 			</div>
 			<script src='https://j1233.minetest.land/blog/app.js'></script>
 			<script>
-async function search() {
-	var input = document.getElementById("myInput");
+				async function search() {
+					var input = document.getElementById("myInput");
 
-	//filter words to lower case
-	var filter = input.value.toLowerCase();
-	if (filter == "") {
-		GetBlogs();
-		return;
-	};
-	var filters = filter.split(" ");
+					//filter words to lower case
+					var filter = input.value.toLowerCase();
+					if (filter == "") {
+						GetBlogs();
+						return;
+					};
+					var filters = filter.split(" ");
 
-	var toDisplay= [];
+					var toDisplay= [];
 
-	const Blogs = await fetch('https://j1233.minetest.land/blog/blogs.csv');
-	const data = await Blogs.text();
+					const Blogs = await fetch('https://j1233.minetest.land/blog/blogs.csv');
+					const data = await Blogs.text();
 
-	const myTable = data.split('\n').slice(1);
+					const myTable = data.split('\n').slice(1);
 
-	//for every row (post)
-	for (let iRow = myTable.length-1; iRow >= 0; iRow--) {
-		const row = myTable[iRow];
+					//for every row (post)
+					for (let iRow = myTable.length-1; iRow >= 0; iRow--) {
+						const row = myTable[iRow];
 
-		const columns = row.split('|');
+						const columns = row.split('|');
 
-		//for every column in the row (string)
-		for (let iCol = 0; iCol < columns.length; iCol++) {
+						//for every column in the row (string)
+						for (let iCol = 0; iCol < columns.length; iCol++) {
 
-			//for each word in filter
-			for (let fRow = 0; fRow < myTable.length; fRow++) {
-				//make the blog string lower case
-				var lowCol = columns[iCol].toLowerCase();
-				var fil = filters[fRow];
+							//for each word in filter
+							for (let fRow = 0; fRow < myTable.length; fRow++) {
+								//make the blog string lower case
+								var lowCol = columns[iCol].toLowerCase();
+								var fil = filters[fRow];
 
-				//if search success and not already in todisplay
-				if (lowCol.includes(fil) && !toDisplay.includes(myTable[iRow])) {
-					toDisplay.push(myTable[iRow]);
-				};
-			};
-		};
-	};
+								//if search success and not already in todisplay
+								if (lowCol.includes(fil) && !toDisplay.includes(myTable[iRow])) {
+									toDisplay.push(myTable[iRow]);
+								};
+							};
+						};
+					};
 
-	document.getElementsByClassName('blogs').item(0).replaceChildren();
+					document.getElementsByClassName('blogs').item(0).replaceChildren();
 
-	var neDiv=document.createElement('Div');
-	neDiv.className = 'blog';
-	neDiv.id = "Title";
-	document.getElementsByClassName('blogs').item(0).appendChild(neDiv);
+					var neDiv=document.createElement('Div');
+					neDiv.className = 'blog';
+					neDiv.id = "Title";
+					document.getElementsByClassName('blogs').item(0).appendChild(neDiv);
 
-	var newLine = document.createElement('br');
- 	neDiv.appendChild(newLine);
+					var newLine = document.createElement('br');
+ 					neDiv.appendChild(newLine);
 	
-	var bt = document.createElement("bigtext");
-	bt.innerHTML = "My Posts:";
-	neDiv.appendChild(bt)
+					var bt = document.createElement("bigtext");
+					bt.innerHTML = "My Posts:";
+					neDiv.appendChild(bt)
 
-	var newLine = document.createElement('br');
- 	neDiv.appendChild(newLine);
+					var newLine = document.createElement('br');
+ 					neDiv.appendChild(newLine);
 
-	for (let nRow = 0; nRow < toDisplay.length; nRow++) {
+					for (let nRow = 0; nRow < toDisplay.length; nRow++) {
 
-		const rrow = toDisplay[nRow];
+						const rrow = toDisplay[nRow];
 
-		const ccolumns = rrow.split('|');
+						const ccolumns = rrow.split('|');
 
-		createPostTitle(	
-			ccolumns[0],
-			ccolumns[1],
-			ccolumns[2]
-		);
-	};
-};</script>
+						createPostTitle(	
+							ccolumns[0],
+							ccolumns[1],
+							ccolumns[2]
+						);
+					};
+				};
+				</script>
+			<br>
+			<a href="https://github.com/Minetest-j45/blog" title="Blog Repo" rel="me" class="repo"> <img alt="GitHub Repo" src="https://j1233.minetest.land/images/repo.png" width="96px" height="32px" /><br><br>
 		<!--<br><br>Copyright (c) 2021 j45 &lt;j45minetest@gmail.com&gt;<br>MIT License-->
 		</center>
 		<script src='https://j1233.minetest.land/footer.js'></script>
