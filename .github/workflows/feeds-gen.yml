@@ -1,0 +1,33 @@
+name: Generate feeds
+
+on:
+  push:
+    paths:
+      - 'blogs.csv'
+  workflow_dispatch:
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Go
+      uses: actions/setup-go@v2
+      with:
+        go-version: 1.17
+
+    - name: Run
+      run: |
+        go mod tidy
+        go run feeds.go
+      
+    - name: Add, commit and push
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add feed.rss
+        git add feed.json
+        git commit -m "Generate feeds"
+        git push

@@ -4,6 +4,7 @@
     <link>https://j1233.minetest.land/blog/</link>
     <description>j45&#39;s Blog</description>
     <managingEditor> (j45)</managingEditor>
+<<<<<<< HEAD
     <pubDate>Sun, 06 Mar 2022 12:18:27 +0000</pubDate>
     <item>
       <title>Minetest game jam</title>
@@ -19,13 +20,31 @@
       <title>Game Jam!</title>
       <link>https://j1233.minetest.land/blog/#Game_Jam!</link>
       <description>Long time no blog :P. I want to inform you that i am participating in a game jam that ends at the end of October and you have to make a 3D voxel horror game, spookyyyyy. The repo is private for now but i will make it public when i have finished making it so you can try :)&#xD;</description>
+=======
+    <pubDate>Sun, 06 Mar 2022 11:58:16 +0000</pubDate>
+    <item>
+      <title>Hello World!</title>
+      <link>https://j1233.minetest.land/blog/#Hello_World!</link>
+      <description>This is my first ever blog and is sort of just a test.</description>
+    </item>
+    <item>
+      <title>Blog finally working</title>
+      <link>https://j1233.minetest.land/blog/#Blog_finally_working</link>
+      <description>I am so happy this basic blog system is finally working as i have spent more than two hours trying to get it to work, more than one of those two hours was spent trying to use Github Actions to setup Node.js and install the fs(file system) package so i could make it create a new html file for each blog but that didnt seem to be working. I will briefly explain how everything is currently working(i use github pages to host this website btw), all the blogs (along with their set number, date and title) are currently stored in a csv file and that file is read and it adds all the titles to the blog page, these are actually buttons that can be clicked on. When a button is clicked, it changes the page so instead of all the blog&#39;s titles, it has the blog that you clicked on&#39;s title and date and just under that, the actual blog. To make a new blog post, i have to edit the csv file, which i admit, is a tad annoying but i can deal with it. Anyways, that is all i can think of. Thanks for reading. :) .</description>
+    </item>
+    <item>
+      <title>So much work</title>
+      <link>https://j1233.minetest.land/blog/#So_much_work</link>
+      <description>Sorry for taking so much time since writing the last blog, but now that school has started again i have so much work. Not only do i have a lot of school work but it seems that my todo list is expanding every day. I hope to soon get a few things done from my todo list so i can relax more... I am going to go do some school work now. Thanks for reading.</description>
+>>>>>>> 07ccdd2f3aef17e4ac3130c1efc7c31a33ffa3a7
     </item>
     <item>
       <title>Renewed Tab</title>
       <link>https://j1233.minetest.land/blog/#Renewed_Tab</link>
-      <description>I am very happy to announce that I have finished translating Renewed Tab(https://renewedtab.com) to Spanish, and it is now included in the latest version, 1.11.0. This update to Renewed Tab also fixed many bugs and added a whole load of new features. If you dont know what Renewed Tab is, it is basically a browser extension that changes the new tab page so it has beautiful backgrounds and widgets, it is also customisable. Now that I have explained what it is, I would like to recommend you, yes YOU reading this right now, to at least check it out. Renewed Tab is not only beautiful but it is also very useful, for example, if you want to focus more and just want the time on your new tab page, you can customise it so it only has the time there. I dont know what else to say about it other than that it is epic. lol.&#xD;</description>
+      <description>I am very happy to announce that I have finished translating Renewed Tab(https://renewedtab.com) to Spanish, and it is now included in the latest version, 1.11.0. This update to Renewed Tab also fixed many bugs and added a whole load of new features. If you dont know what Renewed Tab is, it is basically a browser extension that changes the new tab page so it has beautiful backgrounds and widgets, it is also customisable. Now that I have explained what it is, I would like to recommend you, yes YOU reading this right now, to at least check it out. Renewed Tab is not only beautiful but it is also very useful, for example, if you want to focus more and just want the time on your new tab page, you can customise it so it only has the time there. I dont know what else to say about it other than that it is epic. lol.</description>
     </item>
     <item>
+<<<<<<< HEAD
       <title>So much work</title>
       <link>https://j1233.minetest.land/blog/#So_much_work</link>
       <description>Sorry for taking so much time since writing the last blog, but now that school has started again i have so much work. Not only do i have a lot of school work but it seems that my todo list is expanding every day. I hope to soon get a few things done from my todo list so i can relax more... I am going to go do some school work now. Thanks for reading.&#xD;</description>
@@ -39,6 +58,21 @@
       <title>Hello World!</title>
       <link>https://j1233.minetest.land/blog/#Hello_World!</link>
       <description>This is my first ever blog and is sort of just a test.&#xD;</description>
+=======
+      <title>Game Jam!</title>
+      <link>https://j1233.minetest.land/blog/#Game_Jam!</link>
+      <description>Long time no blog :P. I want to inform you that i am participating in a game jam that ends at the end of October and you have to make a 3D voxel horror game, spookyyyyy. The repo is private for now but i will make it public when i have finished making it so you can try :)</description>
+    </item>
+    <item>
+      <title>Forest Ranger released!</title>
+      <link>https://j1233.minetest.land/blog/#Forest_Ranger_released!</link>
+      <description>Yuppiee i finished my game for the 3d voxel horror game jam. It would be awesome if you could check it out (https://minetest-j45.itch.io/forest-ranger) and rate it (https://itch.io/jam/voxel-horror-jam-2021/rate/1253570). Thanks in advance!</description>
+    </item>
+    <item>
+      <title>Minetest game jam</title>
+      <link>https://j1233.minetest.land/blog/#Minetest_game_jam</link>
+      <description>It has been nearly a month since my last post so I hope people are still interested in these blogs. I just wanted to tell you that i participated in the 2021 Minetest game jam and I made a game inspired by Minecraft Championship&#39;s Buildmart, called Build&#39;N&#39;Buy and you can access it at https://content.minetest.net/packages/j45/build_n_buy/. Feel free to try it, I hope you like it. See you in the next post.</description>
+>>>>>>> 07ccdd2f3aef17e4ac3130c1efc7c31a33ffa3a7
     </item>
   </channel>
 </rss>
