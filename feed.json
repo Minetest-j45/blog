@@ -9,6 +9,12 @@
   "items": [
     {
       "id": "",
+      "url": "https://j1233.minetest.land/blog/#Feeds!",
+      "title": "Feeds!",
+      "summary": "I think this is a new record for longest time between posts, sorry about that. Anyways, I just wanted to tell you that I have successfully made feeds that are automatically generated when I make a new blog (if you want to subscribe to them, they are https://j1233.minetest.land/blog/feed.json and https://j1233.minetest.land/blog/feed.rss). I will shortly add links to the blog website to facilitate copying the links. See you later!"
+    },
+    {
+      "id": "",
       "url": "https://j1233.minetest.land/blog/#Minetest_game_jam",
       "title": "Minetest game jam",
       "summary": "It has been nearly a month since my last post so I hope people are still interested in these blogs. I just wanted to tell you that i participated in the 2021 Minetest game jam and I made a game inspired by Minecraft Championship's Buildmart, called Build'N'Buy and you can access it at https://content.minetest.net/packages/j45/build_n_buy/. Feel free to try it, I hope you like it. See you in the next post."
