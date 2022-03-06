@@ -1,9 +1,6 @@
 name: Generate feeds
 
 on:
-  push:
-    paths:
-      - 'blogs.csv'
   workflow_dispatch:
 
 jobs:
