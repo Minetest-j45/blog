@@ -1,4 +1,4 @@
-name: Feeds
+name: Generate feeds
 
 on:
   push:
@@ -29,5 +29,5 @@ jobs:
         git config user.email github-actions@github.com
         git add feed.rss
         git add feed.json
-        git commit -m "Generte feeds"
+        git commit -m "Generate feeds"
         git push
