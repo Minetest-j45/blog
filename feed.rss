@@ -4,7 +4,12 @@
     <link>https://j1233.minetest.land/blog/</link>
     <description>j45&#39;s Blog</description>
     <managingEditor> (j45)</managingEditor>
-    <pubDate>Sun, 06 Mar 2022 13:01:11 +0000</pubDate>
+    <pubDate>Sun, 06 Mar 2022 13:07:05 +0000</pubDate>
+    <item>
+      <title>Feeds!</title>
+      <link>https://j1233.minetest.land/blog/#Feeds!</link>
+      <description>I think this is a new record for longest time between posts, sorry about that. Anyways, I just wanted to tell you that I have successfully made feeds that are automatically generated when I make a new blog (if you want to subscribe to them, they are https://j1233.minetest.land/blog/feed.json and https://j1233.minetest.land/blog/feed.rss). I will shortly add links to the blog website to facilitate copying the links. See you later!</description>
+    </item>
     <item>
       <title>Minetest game jam</title>
       <link>https://j1233.minetest.land/blog/#Minetest_game_jam</link>
