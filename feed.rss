@@ -4,7 +4,12 @@
     <link>https://j1233.minetest.land/blog/</link>
     <description>j45&#39;s Blog</description>
     <managingEditor> (j45)</managingEditor>
-    <pubDate>Sat, 25 Jun 2022 13:07:54 +0000</pubDate>
+    <pubDate>Sat, 25 Jun 2022 13:14:56 +0000</pubDate>
+    <item>
+      <title>Holidays</title>
+      <link>https://j1233.minetest.land/blog/#Holidays</link>
+      <description>Sorry yet again for the long delay in this new blog post, I had around 1.5 months of exams 😅. Luckily, I have now finished them and I now have a long summer holiday. I hope to be coding quite a bit but also relaxing, this summer. Lets just hope I dont procrastinate coding too much. Thanks for reading!</description>
+    </item>
     <item>
       <title>Feeds!</title>
       <link>https://j1233.minetest.land/blog/#Feeds!</link>
@@ -13,17 +18,17 @@
     <item>
       <title>Minetest game jam</title>
       <link>https://j1233.minetest.land/blog/#Minetest_game_jam</link>
-      <description>It has been nearly a month since my last post so I hope people are still interested in these blogs. I just wanted to tell you that i participated in the 2021 Minetest game jam and I made a game inspired by Minecraft Championship&#39;s Buildmart, called Build&#39;N&#39;Buy and you can access it at https://content.minetest.net/packages/j45/build_n_buy/. Feel free to try it, I hope you like it. See you in the next post.</description>
+      <description>It has been nearly a month since my last post so I hope people are still interested in these blogs. I just wanted to tell you that I participated in the 2021 Minetest game jam and I made a game inspired by Minecraft Championship&#39;s Buildmart, called Build&#39;N&#39;Buy and you can access it at https://content.minetest.net/packages/j45/build_n_buy/. Feel free to try it, I hope you like it. See you in the next post.</description>
     </item>
     <item>
       <title>Forest Ranger released!</title>
       <link>https://j1233.minetest.land/blog/#Forest_Ranger_released!</link>
-      <description>Yuppiee i finished my game for the 3d voxel horror game jam. It would be awesome if you could check it out (https://minetest-j45.itch.io/forest-ranger) and rate it (https://itch.io/jam/voxel-horror-jam-2021/rate/1253570). Thanks in advance!</description>
+      <description>Yuppiee I finished my game for the 3d voxel horror game jam. It would be awesome if you could check it out (https://minetest-j45.itch.io/forest-ranger) and rate it (https://itch.io/jam/voxel-horror-jam-2021/rate/1253570). Thanks in advance!</description>
     </item>
     <item>
       <title>Game Jam!</title>
       <link>https://j1233.minetest.land/blog/#Game_Jam!</link>
-      <description>Long time no blog :P. I want to inform you that i am participating in a game jam that ends at the end of October and you have to make a 3D voxel horror game, spookyyyyy. The repo is private for now but i will make it public when i have finished making it so you can try :)</description>
+      <description>Long time no blog :P. I want to inform you that I am participating in a game jam that ends at the end of October and you have to make a 3D voxel horror game, spookyyyyy. The repo is private for now but I will make it public when I have finished making it so you can try :)</description>
     </item>
     <item>
       <title>Renewed Tab</title>
@@ -33,12 +38,12 @@
     <item>
       <title>So much work</title>
       <link>https://j1233.minetest.land/blog/#So_much_work</link>
-      <description>Sorry for taking so much time since writing the last blog, but now that school has started again i have so much work. Not only do i have a lot of school work but it seems that my todo list is expanding every day. I hope to soon get a few things done from my todo list so i can relax more... I am going to go do some school work now. Thanks for reading.</description>
+      <description>Sorry for taking so much time since writing the last blog, but now that school has started again I have so much work. Not only do I have a lot of school work but it seems that my todo list is expanding every day. I hope to soon get a few things done from my todo list so I can relax more... I am going to go do some school work now. Thanks for reading.</description>
     </item>
     <item>
       <title>Blog finally working</title>
       <link>https://j1233.minetest.land/blog/#Blog_finally_working</link>
-      <description>I am so happy this basic blog system is finally working as i have spent more than two hours trying to get it to work, more than one of those two hours was spent trying to use Github Actions to setup Node.js and install the fs(file system) package so i could make it create a new html file for each blog but that didnt seem to be working. I will briefly explain how everything is currently working(i use github pages to host this website btw), all the blogs (along with their set number, date and title) are currently stored in a csv file and that file is read and it adds all the titles to the blog page, these are actually buttons that can be clicked on. When a button is clicked, it changes the page so instead of all the blog&#39;s titles, it has the blog that you clicked on&#39;s title and date and just under that, the actual blog. To make a new blog post, i have to edit the csv file, which i admit, is a tad annoying but i can deal with it. Anyways, that is all i can think of. Thanks for reading. :) .</description>
+      <description>I am so happy this basic blog system is finally working as I have spent more than two hours trying to get it to work, more than one of those two hours was spent trying to use Github Actions to setup Node.js and install the fs(file system) package so I could make it create a new html file for each blog but that didnt seem to be working. I will briefly explain how everything is currently working(i use github pages to host this website btw), all the blogs (along with their set number, date and title) are currently stored in a csv file and that file is read and it adds all the titles to the blog page, these are actually buttons that can be clicked on. When a button is clicked, it changes the page so instead of all the blog&#39;s titles, it has the blog that you clicked on&#39;s title and date and just under that, the actual blog. To make a new blog post, I have to edit the csv file, which I admit, is a tad annoying but I can deal with it. Anyways, that is all I can think of. Thanks for reading. :) .</description>
     </item>
     <item>
       <title>Hello World!</title>
