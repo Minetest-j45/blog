@@ -33,7 +33,7 @@ func main() {
 	}
 	lines := strings.Split(string(dat), "\n")
 
-	lines = lines[1 : len(lines)-1]
+	lines = lines[1:]
 	//for _, line := range lines {
 	for i := len(lines) - 1; i >= 0; i-- {
 		line := lines[i]
