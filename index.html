@@ -22,7 +22,7 @@
     <style type="text/css">
         .tips {}
         
-        #myInput {
+        #searchInput {
             background-image: url('https://j1233.minetest.land/images/search.png');
             background-position: 10px 12px;
             background-repeat: no-repeat;
@@ -65,7 +65,7 @@
         }
         
         .feeds {
-            width: 20%;
+            width: 15%;
             background: rgb(116, 81, 182);
             border: 3px outset rgb(116, 81, 182);
             border-radius: 5px;
@@ -82,14 +82,14 @@
         <div class="tips">
             TIP: Click on a Blog title that you are interested in to bring up the full blog!
         </div>
-        <input type="search" id="myInput" oninput="search()" placeholder="Search for blog posts.." title="Type in some words">
+        <input type="search" id="searchInput" oninput="search()" placeholder="Search for blog posts.." title="Type in some words">
         <div class="blogs">
 
         </div>
         <script src='https://j1233.minetest.land/blog/app.js'></script>
         <script>
             async function search() {
-                var input = document.getElementById("myInput");
+                var input = document.getElementById("searchInput");
 
                 //filter words to lower case
                 var filter = input.value.toLowerCase();

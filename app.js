@@ -74,6 +74,10 @@ function makePageSpecificBlog(Title,Date,Text) {
 	var newTip = document.createTextNode("TIP: Click on the return arrow at the bottom of the blog to go back to the main blog page!");
 	document.getElementsByClassName('tips').item(0).appendChild(newTip);
 
+	//remove search
+	var search = document.getElementById("searchInput");
+	search.remove()
+
 	//blog
 	document.getElementsByClassName('blogs').item(0).replaceChildren();
 	var nDiv = document.createElement('Div');

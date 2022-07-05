@@ -33,8 +33,7 @@ func main() {
 	}
 	lines := strings.Split(string(dat), "\n")
 
-	lines = lines[1:]
-	//for _, line := range lines {
+	lines = lines[1:] // first line is the layout so remove it
 	for i := len(lines) - 1; i >= 0; i-- {
 		line := lines[i]
 		fields := strings.Split(line, "|")
