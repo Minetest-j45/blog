@@ -64,48 +64,14 @@
             opacity: 0.7;
         }
         
-        .popupbtn {
-            width: 25%;
+        .feeds {
+            width: 20%;
             background: rgb(116, 81, 182);
             border: 3px outset rgb(116, 81, 182);
             border-radius: 5px;
             margin: 0;
             padding: 0;
-            font-size: 28px;
-            cursor: pointer;
-        }
-        
-        .popup {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: rbg(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.4);
-        }
-        
-        .popup-content {
-            border: 5px outset purple;
-            background-color: rgb(216, 100, 201);
-            margin: 15% auto;
-            padding: 20px;
-            width: 80%;
-        }
-        
-        .close {
-            color: black;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        
-        .close:hover,
-        .close:focus {
-            text-decoration: none;
+            font-size: 20px;
             cursor: pointer;
         }
     </style>
@@ -197,34 +163,9 @@
         <br>
         <a href="https://github.com/Minetest-j45/blog" title="Blog Repo" rel="me" class="repo"> <img alt="GitHub Repo" src="https://j1233.minetest.land/images/repo.png" width="96px" height="32px" /></a><br><br>
 
-        <button class="popupbtn" title="Feeds">Feeds</button><br><br>
-        <div class="popup">
-            <div class="popup-content">
-                <span class="close">&times;</span><br>
-                <a href="https://j1233.minetest.land/blog/feed.rss">RSS Feed</a>
-                <a href="https://j1233.minetest.land/blog/feed.json">JSON Feed</a>
-            </div>
-        </div>
-        <script>
-            var popup = document.getElementsByClassName("popup ")[0];
-            var popupbtn = document.getElementsByClassName("popupbtn ")[0];
-            var closebtn = document.getElementsByClassName("close ")[0];
-
-            popupbtn.onclick = function() {
-                popup.style.display = "block ";
-            }
-
-            closebtn.onclick = function() {
-                popup.style.display = "none ";
-            }
-
-            window.onclick = function(event) {
-                if (event.target == popup) {
-                    popup.style.display = "none ";
-                }
-            }
-        </script>
-        <!--<br><br>Copyright (c) 2021 j45 &lt;j45minetest@gmail.com&gt;<br>MIT License-->
+        <button onclick="location.href='https://j1233.minetest.land/blog/feed.rss'" type="button" class="feeds">RSS Feed</button>
+        <button onclick="location.href='https://j1233.minetest.land/blog/feed.json'" type="button" class="feeds">JSON Feed</button>
+        <br>
     </center>
     <script src='https://j1233.minetest.land/nav.js'></script>
     <script src='https://j1233.minetest.land/footer.js '></script>
