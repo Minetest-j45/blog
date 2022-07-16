@@ -1,32 +1,32 @@
 GetBlogs();
 
 async function GetBlogs() {
-	const Blogs = await fetch('https://j1233.minetest.land/blog/blogs.csv');
+	const Blogs = await fetch("https://j1233.minetest.land/blog/blogs.csv");
 	const data = await Blogs.text();
 
-	const myTable = data.split('\n').slice(1);
+	const myTable = data.split("\n").slice(1);
 
-	document.getElementsByClassName('blogs').item(0).replaceChildren();
+	document.getElementsByClassName("blogs").item(0).replaceChildren();
 
-	var neDiv=document.createElement('Div');
-	neDiv.className = 'blog';
+	var neDiv=document.createElement("Div");
+	neDiv.className = "blog";
 	neDiv.id = "Title";
-	document.getElementsByClassName('blogs').item(0).appendChild(neDiv);
+	document.getElementsByClassName("blogs").item(0).appendChild(neDiv);
 
-	var newLine = document.createElement('br');
+	var newLine = document.createElement("br");
  	neDiv.appendChild(newLine);
 	
 	var bt = document.createElement("bigtext");
 	bt.innerHTML = "My Posts:";
 	neDiv.appendChild(bt)
 
-	var newLine = document.createElement('br');
+	var newLine = document.createElement("br");
  	neDiv.appendChild(newLine);
 
 	//for share option
 	for (let iRow = 0; iRow < myTable.length; iRow++) {
 		const row = myTable[iRow];
-		const columns = row.split('|');
+		const columns = row.split("|");
 		var hash = window.location.hash.toLowerCase();
 		var lowTitle = "#"+columns[0].replaceAll(" ", "_").toLowerCase();
 		if (hash == lowTitle) {
@@ -39,7 +39,7 @@ async function GetBlogs() {
 
 		const row = myTable[iRow];
 
-		const columns = row.split('|');
+		const columns = row.split("|");
 
 		createPostTitle(	
 			columns[0],
@@ -52,11 +52,11 @@ async function GetBlogs() {
 
 function createPostTitle(Title,Date,Text) {
 	//Blog Block
-	var newDiv=document.createElement('Div');
-	newDiv.className = 'blog';
-	document.getElementsByClassName('blogs').item(0).appendChild(newDiv);
+	var newDiv=document.createElement("Div");
+	newDiv.className = "blog";
+	document.getElementsByClassName("blogs").item(0).appendChild(newDiv);
 
-	var newLine = document.createElement('br');
+	var newLine = document.createElement("br");
  	newDiv.appendChild(newLine);
 
 	//Blog title
@@ -70,21 +70,21 @@ function createPostTitle(Title,Date,Text) {
 
 function makePageSpecificBlog(Title,Date,Text) {
 	//tip
-	document.getElementsByClassName('tips').item(0).replaceChildren();
+	document.getElementsByClassName("tips").item(0).replaceChildren();
 	var newTip = document.createTextNode("TIP: Click on the return arrow at the bottom of the blog to go back to the main blog page!");
-	document.getElementsByClassName('tips').item(0).appendChild(newTip);
+	document.getElementsByClassName("tips").item(0).appendChild(newTip);
 
 	//remove search
 	var search = document.getElementById("searchInput");
 	search.remove()
 
 	//blog
-	document.getElementsByClassName('blogs').item(0).replaceChildren();
-	var nDiv = document.createElement('Div');
-	document.getElementsByClassName('blogs').item(0).appendChild(nDiv);
+	document.getElementsByClassName("blogs").item(0).replaceChildren();
+	var nDiv = document.createElement("Div");
+	document.getElementsByClassName("blogs").item(0).appendChild(nDiv);
 
 	//new line
-	var newLine = document.createElement('br');
+	var newLine = document.createElement("br");
  	nDiv.appendChild(newLine);
 
 	//title big
@@ -93,18 +93,27 @@ function makePageSpecificBlog(Title,Date,Text) {
 	nDiv.appendChild(big);
 
 	//date small
-	var date = document.createTextNode(' - '+Date);
+	var date = document.createTextNode(" - "+Date);
 	nDiv.appendChild(date);
 
+	//exit button
+	var exit = document.createElement("exit");
+	exit.style = "cursor: pointer; float: right; margin-right: 2%; font-size: 23px";
+	exit.innerHTML = "X"
+	exit.onclick = function(){
+		window.location = "https://j1233.minetest.land/blog";
+	};
+	nDiv.appendChild(exit);
 
-	var newLine = document.createElement('br');
+
+	var newLine = document.createElement("br");
  	nDiv.appendChild(newLine);
 
 	//text
 	newText = document.createTextNode(Text);
 	nDiv.appendChild(newText);
 	
-	var newLine = document.createElement('br');
+	var newLine = document.createElement("br");
  	nDiv.appendChild(newLine);
 	
 	var btn = document.createElement("myButton");
@@ -116,18 +125,18 @@ function makePageSpecificBlog(Title,Date,Text) {
 	};
 	nDiv.appendChild(btn);
 
-	var newLine = document.createElement('br');
+	var newLine = document.createElement("br");
  	nDiv.appendChild(newLine);
 	
 
-	var img = document.createElement("img");
-	img.src = 'https://j1233.minetest.land/images/return.png';
-	img.style = 'cursor: pointer;';
-	img.onclick = function(){
+	var back = document.createElement("img");
+	back.src = "https://j1233.minetest.land/images/return.png";
+	back.style = "cursor: pointer;";
+	back.onclick = function(){
 		window.location = "https://j1233.minetest.land/blog";
 	};
-	nDiv.appendChild(img);
+	nDiv.appendChild(back);
 	
-	var newLine = document.createElement('br');
+	var newLine = document.createElement("br");
  	nDiv.appendChild(newLine);
 };
