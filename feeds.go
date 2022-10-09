@@ -38,8 +38,10 @@ func main() {
 	for i := len(lines) - 1; i >= 0; i-- {
 		line := lines[i]
 		fields := strings.Split(line, "|")
-		fmt.Println(line)
-		fmt.Println(fields)
+		if len(fields) < 3 {// invalid line
+			continue
+		}
+		
 		blog := Blog{
 			Title: fields[0],
 			Text:  fields[2],
