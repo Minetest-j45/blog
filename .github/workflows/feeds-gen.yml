@@ -2,6 +2,9 @@ name: Generate feeds
 
 on:
   workflow_dispatch:
+  push:
+    paths:
+      - 'blogs.csv'
 
 jobs:
 
