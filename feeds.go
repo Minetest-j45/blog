@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"io/ioutil"
 	"strings"
 	"time"
@@ -37,6 +38,8 @@ func main() {
 	for i := len(lines) - 1; i >= 0; i-- {
 		line := lines[i]
 		fields := strings.Split(line, "|")
+		fmt.Println(line)
+		fmt.Println(fields)
 		blog := Blog{
 			Title: fields[0],
 			Text:  fields[2],
