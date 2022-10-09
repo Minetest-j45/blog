@@ -4,7 +4,12 @@
     <link>https://j1233.minetest.land/blog/</link>
     <description>j45&#39;s Blog</description>
     <managingEditor> (j45)</managingEditor>
-    <pubDate>Sat, 25 Jun 2022 13:14:56 +0000</pubDate>
+    <pubDate>Sun, 09 Oct 2022 10:17:07 +0000</pubDate>
+    <item>
+      <title>College</title>
+      <link>https://j1233.minetest.land/blog/#College</link>
+      <description>I think at this point I should just stop aplogising for late blog posts as I do it so much. Anyways, I just had my first week at college which was very fun as I only do subjects I enjoy now; I am studying Physics, Maths, Chemistry and Further Maths. This week has been great but it feels like alot more work than secondary school because in secondary school I did bits of work for lots of subjects; now I do lots of work for a few subjects. But I am finding it very fun, and I am escpecially enjoying the freedom of having some free periods. I cant wait to get to know all the awesome people at this school better. See you soon, hopefully lol.</description>
+    </item>
     <item>
       <title>Holidays</title>
       <link>https://j1233.minetest.land/blog/#Holidays</link>
@@ -43,7 +48,7 @@
     <item>
       <title>Blog finally working</title>
       <link>https://j1233.minetest.land/blog/#Blog_finally_working</link>
-      <description>I am so happy this basic blog system is finally working as I have spent more than two hours trying to get it to work, more than one of those two hours was spent trying to use Github Actions to setup Node.js and install the fs(file system) package so I could make it create a new html file for each blog but that didnt seem to be working. I will briefly explain how everything is currently working(i use github pages to host this website btw), all the blogs (along with their set number, date and title) are currently stored in a csv file and that file is read and it adds all the titles to the blog page, these are actually buttons that can be clicked on. When a button is clicked, it changes the page so instead of all the blog&#39;s titles, it has the blog that you clicked on&#39;s title and date and just under that, the actual blog. To make a new blog post, I have to edit the csv file, which I admit, is a tad annoying but I can deal with it. Anyways, that is all I can think of. Thanks for reading. :) .</description>
+      <description>I am so happy this basic blog system is finally working as I have spent more than two hours trying to get it to work, more than one of those two hours was spent trying to use Github Actions to setup Node.js and install the fs(file system) package so I could make it create a new html file for each blog but that didnt seem to be working. I will briefly explain how everything is currently working(I use github pages to host this website btw), all the blogs (along with their set number, date and title) are currently stored in a csv file and that file is read and it adds all the titles to the blog page, these are actually buttons that can be clicked on. When a button is clicked, it changes the page so instead of all the blog&#39;s titles, it has the blog that you clicked on&#39;s title and date and just under that, the actual blog. To make a new blog post, I have to edit the csv file, which I admit, is a tad annoying but I can deal with it. Anyways, that is all I can think of. Thanks for reading. :) .</description>
     </item>
     <item>
       <title>Hello World!</title>
