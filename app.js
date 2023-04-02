@@ -108,9 +108,11 @@ function makePageSpecificBlog(Title,Date,Text) {
 
 	var newLine = document.createElement("br");
  	nDiv.appendChild(newLine);
+	nDiv.appendChild(newLine);
 
 	//text
-	newText = document.createTextNode(Text);
+	newText = document.createElement("p");
+	newText.innerHTML = Text;
 	nDiv.appendChild(newText);
 	
 	var newLine = document.createElement("br");
