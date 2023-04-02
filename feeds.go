@@ -37,10 +37,10 @@ func main() {
 	for i := len(lines) - 1; i >= 0; i-- {
 		line := lines[i]
 		fields := strings.Split(line, "|")
-		if len(fields) < 3 {// invalid line
+		if len(fields) < 3 { // invalid line
 			continue
 		}
-		
+
 		blog := Blog{
 			Title: fields[0],
 			Text:  fields[2],
@@ -49,8 +49,7 @@ func main() {
 	}
 
 	for _, blog := range blogs {
-		titleslice := strings.Split(blog.Title, " ")
-		link := "https://j1233.minetest.land/blog/#" + strings.Join(titleslice, "_")
+		link := "https://j1233.minetest.land/blog/#" + strings.ToLower(strings.ReplaceAll(blog.Title, " ", "_"))
 		feedItems = append(feedItems,
 			&feeds.Item{
 				Title:       blog.Title,
