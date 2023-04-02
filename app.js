@@ -42,15 +42,13 @@ async function GetBlogs() {
 		const columns = row.split("|");
 
 		createPostTitle(	
-			columns[0],
-			columns[1],
-			columns[2]
+			columns[0]
 		);
 	};
 
 };
 
-function createPostTitle(Title,Date,Text) {
+function createPostTitle(Title) {
 	//Blog Block
 	var newDiv=document.createElement("Div");
 	newDiv.className = "blog";
