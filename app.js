@@ -63,7 +63,7 @@ function createPostTitle(Title,Date,Text) {
 	var btn = document.createElement("myButton");
 	btn.innerHTML = Title;
 	btn.onclick = function () {
-		window.location = "https://j1233.minetest.land/blog#"+columns[0].replaceAll(" ", "_").toLowerCase();
+		window.location = "https://j1233.minetest.land/blog#"+Title.replaceAll(" ", "_").toLowerCase();
 		//makePageSpecificBlog(Title,Date,Text);
 	};
 	newDiv.appendChild(btn);
