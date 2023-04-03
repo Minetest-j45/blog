@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://j1233.minetest.land/css/index.css?v=1.0">
+    <link rel="icon" href="https://j1233.minetest.land/images/j45.png" type="image/x-icon">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="j45's blog">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://j1233.minetest.land/">
+    <meta property="og:title" content="j45">
+    <meta name="og:description" content="Hi, I'm j45(he/him). I am 15 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.">
+    <meta name="og:image" content="https://j1233.minetest.land/images/bigj45.png">
+
+    <title>j45's blog</title>
+
+    <style type="text/css">
+        .blogs {
+            border: 5px outset purple;
+            background-color: #ff9b9b;
+            margin: 1% 10% 0;
+        }
+        
+        myButton {
+            background-color: #ff9b9b;
+            cursor: pointer;
+			color: blue;
+			text-decoration: underline;
+        }
+        
+        bigtext {
+            font-size: 23px;
+        }
+
+		exit {
+			cursor: pointer;
+			float: right;
+			margin-right: 2%;
+			font-size: 23px;
+		}
+        
+        .repo img {
+            transition: transform .2s;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges
+        }
+        
+        .repo img:hover {
+            transform: scale(1.5);
+            opacity: 0.7;
+        }
+        
+        .feeds {
+            width: 15%;
+            background: rgb(116, 81, 182);
+            border: 3px outset rgb(116, 81, 182);
+            border-radius: 5px;
+            margin: 0;
+            padding: 0;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+		<div class="tips">
+			<noscript>Please enable JavaScript for full functionality</noscript>
+            TIP: Click on the return arrow at the bottom of the blog to go back to the main blog page!
+        </div>
+        <div class="blogs">
+			<br>
+
+{{ post }}
+
+        </div>
+		<br>
+		<a href="https://github.com/Minetest-j45/blog" title="Blog Repo" rel="me" class="repo"> <img alt="GitHub Repo" src="https://j1233.minetest.land/images/repo.png" width="96px" height="32px" /></a><br><br>
+    </center>
+    <script src='https://j1233.minetest.land/nav.js'></script>
+    <script src='https://j1233.minetest.land/footer.js '></script>
+</body>
+</html>

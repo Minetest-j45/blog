@@ -1,7 +1,7 @@
 package main
 
 import (
-	"io/ioutil"
+	"os"
 	"strings"
 	"time"
 
@@ -27,7 +27,7 @@ func main() {
 
 	var feedItems []*feeds.Item
 
-	dat, err := ioutil.ReadFile("blogs.csv")
+	dat, err := os.ReadFile("blogs.csv")
 	if err != nil {
 		panic(err)
 	}
@@ -64,7 +64,7 @@ func main() {
 		panic(err)
 	}
 
-	err = ioutil.WriteFile("feed.rss", []byte(rssFeed), 0644)
+	err = os.WriteFile("feed.rss", []byte(rssFeed), 0644)
 	if err != nil {
 		panic(err)
 	}
@@ -74,7 +74,7 @@ func main() {
 		panic(err)
 	}
 
-	err = ioutil.WriteFile("feed.json", []byte(jsonFeed), 0644)
+	err = os.WriteFile("feed.json", []byte(jsonFeed), 0644)
 	if err != nil {
 		panic(err)
 	}
