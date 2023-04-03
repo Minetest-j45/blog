@@ -1,4 +1,4 @@
-name: Generate feeds
+name: Generate feeds and posts
 
 on:
   workflow_dispatch:
@@ -16,12 +16,16 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v2
       with:
-        go-version: 1.17
+        go-version: 1.18
 
-    - name: Run
+    - name: Generate feeds
       run: |
         go mod tidy
         go run feeds.go
+    
+    - name: Generate posts
+      run: |
+        go run posts.go
       
     - name: Add, commit and push
       run: |
@@ -30,4 +34,6 @@ jobs:
         git add feed.rss
         git add feed.json
         git commit -m "Generate feeds"
+        git add .
+        git commit -m "Generate posts"
         git push
