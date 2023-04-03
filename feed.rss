@@ -4,56 +4,31 @@
     <link>https://j1233.minetest.land/blog/</link>
     <description>j45&#39;s Blog</description>
     <managingEditor> (j45)</managingEditor>
-    <pubDate>Sun, 09 Oct 2022 10:17:07 +0000</pubDate>
+    <pubDate>Mon, 03 Apr 2023 15:53:32 +0000</pubDate>
     <item>
-      <title>College</title>
-      <link>https://j1233.minetest.land/blog/#College</link>
-      <description>I think at this point I should just stop aplogising for late blog posts as I do it so much. Anyways, I just had my first week at college which was very fun as I only do subjects I enjoy now; I am studying Physics, Maths, Chemistry and Further Maths. This week has been great but it feels like alot more work than secondary school because in secondary school I did bits of work for lots of subjects; now I do lots of work for a few subjects. But I am finding it very fun, and I am escpecially enjoying the freedom of having some free periods. I cant wait to get to know all the awesome people at this school better. See you soon, hopefully lol.</description>
+      <title>DNS over TLS</title>
+      <link>https://j1233.minetest.land/blog/#dns_over_tls</link>
+      <description>This is a blog post that I have wanted to make recently, after finding very little information online about how DNS over TLS (DoT) requests are formatted. What I have learnt while researching for &lt;a href=&#34;https://github.com/Minetest-j45/dothole&#34;&gt;my project&lt;/a&gt; is that DoT requests/respones only differ from normal DNS requests in one manner. &lt;br&gt;This difference is that the first 2 bytes of the message are the length of the rest of the message. These two length bytes are prepended to the message which is then sent with TLS. This is mentioned in the RFC, &lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc7858.html#section-3.3&#34;&gt;as seen here&lt;/a&gt;, but I didnt see this at first, leading to some errors. I hope this information is useful or atleast interesting to someone out there.</description>
     </item>
     <item>
-      <title>Holidays</title>
-      <link>https://j1233.minetest.land/blog/#Holidays</link>
-      <description>Sorry yet again for the long delay in this new blog post, I had around 1.5 months of exams 😅. Luckily, I have now finished them and I now have a long summer holiday. I hope to be coding quite a bit but also relaxing, this summer. Lets just hope I dont procrastinate coding too much. Thanks for reading!</description>
+      <title>Update</title>
+      <link>https://j1233.minetest.land/blog/#update</link>
+      <description>This is just a post updating you on how I will be using this blog system in the future and the changes I have made. As you may have noticed, my website has recently gone through many UI changes, this is as a part of my scheme to revamp my website. Along with this, I plan on changing the way my blog works, I plan on it focusing more on technology, and less about me. Soon, I will make the blog more intuitive and make it have more features, such as the links and images I promised in the prior post. I will also make new posts as soon as I get some ideas.</description>
     </item>
     <item>
       <title>Feeds!</title>
-      <link>https://j1233.minetest.land/blog/#Feeds!</link>
-      <description>I think this is a new record for longest time between posts, sorry about that. Anyways, I just wanted to tell you that I have successfully made feeds that are automatically generated when I make a new blog (if you want to subscribe to them, they are https://j1233.minetest.land/blog/feed.json and https://j1233.minetest.land/blog/feed.rss). I will shortly add links to the blog website to facilitate copying the links. See you later!</description>
+      <link>https://j1233.minetest.land/blog/#feeds!</link>
+      <description>I have successfully made feeds that are automatically generated/updated when I make a new blog post (&lt;a href=&#34;https://j1233.minetest.land/blog/feed.json&#34;&gt;JSON feed&lt;/a&gt; and &lt;a href=&#34;https://j1233.minetest.land/blog/feed.rss&#34;&gt;RSS feed&lt;/a&gt;). The way this feed generation currently works is that every time that I push a new post (or when the blog posts csv file is changed) to the GitHub repo, a GitHub Action runs, which reads the blog posts csv file and then parses and converts the information it contains into feeds using &lt;a href=&#34;https://pkg.go.dev/github.com/gorilla/feeds&#34;&gt;a very cool Golang package&lt;/a&gt; that I found. I will hopefully soon add some features such as links and images to make posts easier on the eyes.</description>
     </item>
     <item>
-      <title>Minetest game jam</title>
-      <link>https://j1233.minetest.land/blog/#Minetest_game_jam</link>
-      <description>It has been nearly a month since my last post so I hope people are still interested in these blogs. I just wanted to tell you that I participated in the 2021 Minetest game jam and I made a game inspired by Minecraft Championship&#39;s Buildmart, called Build&#39;N&#39;Buy and you can access it at https://content.minetest.net/packages/j45/build_n_buy/. Feel free to try it, I hope you like it. See you in the next post.</description>
-    </item>
-    <item>
-      <title>Forest Ranger released!</title>
-      <link>https://j1233.minetest.land/blog/#Forest_Ranger_released!</link>
-      <description>Yuppiee I finished my game for the 3d voxel horror game jam. It would be awesome if you could check it out (https://minetest-j45.itch.io/forest-ranger) and rate it (https://itch.io/jam/voxel-horror-jam-2021/rate/1253570). Thanks in advance!</description>
-    </item>
-    <item>
-      <title>Game Jam!</title>
-      <link>https://j1233.minetest.land/blog/#Game_Jam!</link>
-      <description>Long time no blog :P. I want to inform you that I am participating in a game jam that ends at the end of October and you have to make a 3D voxel horror game, spookyyyyy. The repo is private for now but I will make it public when I have finished making it so you can try :)</description>
-    </item>
-    <item>
-      <title>Renewed Tab</title>
-      <link>https://j1233.minetest.land/blog/#Renewed_Tab</link>
-      <description>I am very happy to announce that I have finished translating Renewed Tab(https://renewedtab.com) to Spanish, and it is now included in the latest version, 1.11.0. This update to Renewed Tab also fixed many bugs and added a whole load of new features. If you dont know what Renewed Tab is, it is basically a browser extension that changes the new tab page so it has beautiful backgrounds and widgets, it is also customisable. Now that I have explained what it is, I would like to recommend you, yes YOU reading this right now, to at least check it out. Renewed Tab is not only beautiful but it is also very useful, for example, if you want to focus more and just want the time on your new tab page, you can customise it so it only has the time there. I dont know what else to say about it other than that it is epic. lol.</description>
-    </item>
-    <item>
-      <title>So much work</title>
-      <link>https://j1233.minetest.land/blog/#So_much_work</link>
-      <description>Sorry for taking so much time since writing the last blog, but now that school has started again I have so much work. Not only do I have a lot of school work but it seems that my todo list is expanding every day. I hope to soon get a few things done from my todo list so I can relax more... I am going to go do some school work now. Thanks for reading.</description>
-    </item>
-    <item>
-      <title>Blog finally working</title>
-      <link>https://j1233.minetest.land/blog/#Blog_finally_working</link>
-      <description>I am so happy this basic blog system is finally working as I have spent more than two hours trying to get it to work, more than one of those two hours was spent trying to use Github Actions to setup Node.js and install the fs(file system) package so I could make it create a new html file for each blog but that didnt seem to be working. I will briefly explain how everything is currently working(I use github pages to host this website btw), all the blogs (along with their set number, date and title) are currently stored in a csv file and that file is read and it adds all the titles to the blog page, these are actually buttons that can be clicked on. When a button is clicked, it changes the page so instead of all the blog&#39;s titles, it has the blog that you clicked on&#39;s title and date and just under that, the actual blog. To make a new blog post, I have to edit the csv file, which I admit, is a tad annoying but I can deal with it. Anyways, that is all I can think of. Thanks for reading. :) .</description>
+      <title>Blog Working</title>
+      <link>https://j1233.minetest.land/blog/#blog_working</link>
+      <description>I am happy that this basic blogging system is now working. I will briefly explain how everything is currently working, all the blogs (along with their date and title) are currently stored in &lt;a href=&#34;https://j1233.minetest.land/blog/blogs.csv&#34;&gt;a csv file&lt;/a&gt; and when someone visits this site, that file is read and the information it contains is displayed in their brower. This system does rely on client-side JavaScript however for the large majority of people, this shouldn&#39;t be an issue, as most websites also rely on it. To make a new blog post, I add a new line to the bottom of the csv file which contains all the information about the post.</description>
     </item>
     <item>
       <title>Hello World!</title>
-      <link>https://j1233.minetest.land/blog/#Hello_World!</link>
-      <description>This is my first ever blog and is sort of just a test.</description>
+      <link>https://j1233.minetest.land/blog/#hello_world!</link>
+      <description>This is my first ever blog post and is sort of just a test.</description>
     </item>
   </channel>
 </rss>
