@@ -1,6 +1,6 @@
 module github.com/Minetest-j45/blog
 
-go 1.18
+go 1.17
 
 require github.com/gorilla/feeds v1.1.1
 
