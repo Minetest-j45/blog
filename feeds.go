@@ -49,11 +49,10 @@ func main() {
 	}
 
 	for _, blog := range blogs {
-		link := "https://j1233.minetest.land/blog/#" + strings.ToLower(strings.ReplaceAll(blog.Title, " ", "_"))
 		feedItems = append(feedItems,
 			&feeds.Item{
 				Title:       blog.Title,
-				Link:        &feeds.Link{Href: link},
+				Link:        &feeds.Link{Href: "https://j1233.minetest.land/blog/post_" + strings.ToLower(strings.ReplaceAll(blog.Title, " ", "_")) + ".html"},
 				Description: blog.Text,
 			})
 	}
