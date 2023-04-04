@@ -1,3 +1,6 @@
+---
+title: j45's Blog
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,7 +11,7 @@
     <link rel="icon" href="https://j1233.minetest.land/images/j45.png" type="image/x-icon">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="j45's blog">
+    <meta name="description" content="j45's Blog">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="http://j1233.minetest.land/">
@@ -16,7 +19,7 @@
     <meta name="og:description" content="Hi, I'm j45(he/him). I am 16 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.">
     <meta name="og:image" content="https://j1233.minetest.land/images/bigj45.png">
 
-    <title>j45's blog</title>
+    <title>{{ page.title }}</title>
 
     <style type="text/css">
         #searchInput {
@@ -81,6 +84,7 @@
         <div class="blogs">
 			<div class="blog" id="Title"><br><bigtext>My Posts:</bigtext><br></div>
 
+<div class='blog'><br><mybutton onclick='function changeLoc() { window.location = `https://j1233.minetest.land/blog/post_javascript_no_more.html`; }; changeLoc();'>JavaScript No More</mybutton></div>
 <div class='blog'><br><mybutton onclick='function changeLoc() { window.location = `https://j1233.minetest.land/blog/post_dns_over_tls.html`; }; changeLoc();'>DNS over TLS</mybutton></div>
 <div class='blog'><br><mybutton onclick='function changeLoc() { window.location = `https://j1233.minetest.land/blog/post_update.html`; }; changeLoc();'>Update</mybutton></div>
 <div class='blog'><br><mybutton onclick='function changeLoc() { window.location = `https://j1233.minetest.land/blog/post_feeds!.html`; }; changeLoc();'>Feeds!</mybutton></div>
@@ -94,8 +98,8 @@
         <button onclick='location.href="https://j1233.minetest.land/blog/feed.rss"' type="button" class="feeds">RSS Feed</button>
         <button onclick='location.href="https://j1233.minetest.land/blog/feed.json"' type="button" class="feeds">JSON Feed</button>
         <br>
+		{% include footer.html %}
     </center>
     <script src='https://j1233.minetest.land/nav.js'></script>
-    <script src='https://j1233.minetest.land/footer.js '></script>
 </body>
 </html>
