@@ -44,6 +44,7 @@ title: j45's Blog
 			float: right;
 			margin-right: 2%;
 			font-size: 23px;
+			text-decoration: none;
 		}
         
         .repo img {
@@ -79,7 +80,7 @@ title: j45's Blog
         <div class="blogs">
 			<br>
 
-<bigtext>Feeds!</bigtext> - 6 March 2022<exit onclick='function mainPage() { window.location = `https://j1233.minetest.land/blog/`; }; mainPage();'>X</exit><br><p>I have successfully made feeds that are automatically generated/updated when I make a new blog post (<a href="https://j1233.minetest.land/blog/feed.json">JSON feed</a> and <a href="https://j1233.minetest.land/blog/feed.rss">RSS feed</a>). The way this feed generation currently works is that every time that I push a new post (or when the blog posts csv file is changed) to the GitHub repo, a GitHub Action runs, which reads the blog posts csv file and then parses and converts the information it contains into feeds using <a href="https://pkg.go.dev/github.com/gorilla/feeds">a very cool Golang package</a> that I found. I will hopefully soon add some features such as links and images to make posts easier on the eyes.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j1233.minetest.land/blog/post_feeds!.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><img onclick='function mainPage() { window.location = `https://j1233.minetest.land/blog/`; }; mainPage();' src='https://j1233.minetest.land/images/return.png' style=`cursor: pointer;`>
+<bigtext>Feeds!</bigtext> - 6 March 2022<a href='https://j1233.minetest.land/blog/'><exit style='color: #000;'>X</exit></a><br><p>I have successfully made feeds that are automatically generated/updated when I make a new blog post (<a href="https://j1233.minetest.land/blog/feed.json">JSON feed</a> and <a href="https://j1233.minetest.land/blog/feed.rss">RSS feed</a>). The way this feed generation currently works is that every time that I push a new post (or when the blog posts csv file is changed) to the GitHub repo, a GitHub Action runs, which reads the blog posts csv file and then parses and converts the information it contains into feeds using <a href="https://pkg.go.dev/github.com/gorilla/feeds">a very cool Golang package</a> that I found. I will hopefully soon add some features such as links and images to make posts easier on the eyes.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j1233.minetest.land/blog/post_feeds!.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://j1233.minetest.land/blog/'><img src='https://j1233.minetest.land/images/return.png' style='cursor: pointer;'></a>
 
         </div>
 		<br>

@@ -44,6 +44,7 @@ title: j45's Blog
 			float: right;
 			margin-right: 2%;
 			font-size: 23px;
+			text-decoration: none;
 		}
         
         .repo img {
@@ -79,7 +80,7 @@ title: j45's Blog
         <div class="blogs">
 			<br>
 
-<bigtext>JavaScript No More</bigtext> - 3 April 2023<exit onclick='function mainPage() { window.location = `https://j1233.minetest.land/blog/`; }; mainPage();'>X</exit><br><p>Some of you will be happy to hear that this blog no longer replies on JavaScript to work. The way that things work now is that everytime I push to the repo, a GitHub Action is run which runs a Go script that I wrote.<br>This Go script generates the html pages for all the blog posts using the template that I have. It also remakes the index.html page to make sure the list of blog posts there is up to date. Now that the visitor's browser doesnt run JavaScript code to load the blog content, posts should load a bit faster, but you probably wont notice this unless you are on old hardware.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j1233.minetest.land/blog/post_javascript_no_more.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><img onclick='function mainPage() { window.location = `https://j1233.minetest.land/blog/`; }; mainPage();' src='https://j1233.minetest.land/images/return.png' style=`cursor: pointer;`>
+<bigtext>JavaScript No More</bigtext> - 3 April 2023<a href='https://j1233.minetest.land/blog/'><exit style='color: #000;'>X</exit></a><br><p>Some of you will be happy to hear that this blog no longer replies on JavaScript to work. The way that things work now is that everytime I push to the repo, a GitHub Action is run which runs a Go script that I wrote.<br>This Go script generates the html pages for all the blog posts using the template that I have. It also remakes the index.html page to make sure the list of blog posts there is up to date. Now that the visitor's browser doesnt run JavaScript code to load the blog content, posts should load a bit faster, but you probably wont notice this unless you are on old hardware.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j1233.minetest.land/blog/post_javascript_no_more.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://j1233.minetest.land/blog/'><img src='https://j1233.minetest.land/images/return.png' style='cursor: pointer;'></a>
 
         </div>
 		<br>

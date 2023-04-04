@@ -14,13 +14,13 @@ type Blog struct {
 
 func makeTitles(posts []Blog) (titles []string) {
 	for _, post := range posts {
-		titles = append(titles, "<div class='blog'><br><mybutton onclick='function changeLoc() { window.location = `https://j1233.minetest.land/blog/post_"+strings.ToLower(strings.ReplaceAll(post.Title, " ", "_"))+".html`; }; changeLoc();'>"+post.Title+"</mybutton></div>")
+		titles = append(titles, "<div class='blog'><br><a href='https://j1233.minetest.land/blog/post_"+strings.ToLower(strings.ReplaceAll(post.Title, " ", "_"))+".html' style='text-decoration: none; color: #000;'><mybutton>"+post.Title+"</mybutton></a></div>")
 	}
 	return titles
 }
 
 func makePost(post Blog) (content string) {
-	return "<bigtext>" + post.Title + "</bigtext> - " + post.Date + "<exit onclick='function mainPage() { window.location = `https://j1233.minetest.land/blog/`; }; mainPage();'>X</exit><br><p>" + post.Text + "</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j1233.minetest.land/blog/post_" + strings.ToLower(strings.ReplaceAll(post.Title, " ", "_")) + ".html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><img onclick='function mainPage() { window.location = `https://j1233.minetest.land/blog/`; }; mainPage();' src='https://j1233.minetest.land/images/return.png' style=`cursor: pointer;`>"
+	return "<bigtext>" + post.Title + "</bigtext> - " + post.Date + "<a href='https://j1233.minetest.land/blog/'><exit style='color: #000;'>X</exit></a><br><p>" + post.Text + "</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j1233.minetest.land/blog/post_" + strings.ToLower(strings.ReplaceAll(post.Title, " ", "_")) + ".html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://j1233.minetest.land/blog/'><img src='https://j1233.minetest.land/images/return.png' style='cursor: pointer;'></a>"
 }
 
 func main() {

@@ -44,6 +44,7 @@ title: j45's Blog
 			float: right;
 			margin-right: 2%;
 			font-size: 23px;
+			text-decoration: none;
 		}
         
         .repo img {
@@ -79,7 +80,7 @@ title: j45's Blog
         <div class="blogs">
 			<br>
 
-<bigtext>Blog Working</bigtext> - 31 August 2021<exit onclick='function mainPage() { window.location = `https://j1233.minetest.land/blog/`; }; mainPage();'>X</exit><br><p>I am happy that this basic blogging system is now working. I will briefly explain how everything is currently working, all the blogs (along with their date and title) are currently stored in <a href="https://j1233.minetest.land/blog/blogs.csv">a csv file</a> and when someone visits this site, that file is read and the information it contains is displayed in their brower. This system does rely on client-side JavaScript however for the large majority of people, this shouldn't be an issue, as most websites also rely on it. To make a new blog post, I add a new line to the bottom of the csv file which contains all the information about the post.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j1233.minetest.land/blog/post_blog_working.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><img onclick='function mainPage() { window.location = `https://j1233.minetest.land/blog/`; }; mainPage();' src='https://j1233.minetest.land/images/return.png' style=`cursor: pointer;`>
+<bigtext>Blog Working</bigtext> - 31 August 2021<a href='https://j1233.minetest.land/blog/'><exit style='color: #000;'>X</exit></a><br><p>I am happy that this basic blogging system is now working. I will briefly explain how everything is currently working, all the blogs (along with their date and title) are currently stored in <a href="https://j1233.minetest.land/blog/blogs.csv">a csv file</a> and when someone visits this site, that file is read and the information it contains is displayed in their brower. This system does rely on client-side JavaScript however for the large majority of people, this shouldn't be an issue, as most websites also rely on it. To make a new blog post, I add a new line to the bottom of the csv file which contains all the information about the post.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j1233.minetest.land/blog/post_blog_working.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://j1233.minetest.land/blog/'><img src='https://j1233.minetest.land/images/return.png' style='cursor: pointer;'></a>
 
         </div>
 		<br>
