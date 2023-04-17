@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>j45&#39;s Blog</title>
-    <link>https://j1233.minetest.land/blog/</link>
+    <link>https://www.j45.dev/blog/</link>
     <description>j45&#39;s Blog</description>
     <managingEditor> (j45)</managingEditor>
     <pubDate>Tue, 04 Apr 2023 17:02:58 +0000</pubDate>
     <item>
       <title>JavaScript No More</title>
-      <link>https://j1233.minetest.land/blog/post_javascript_no_more.html</link>
+      <link>https://www.j45.dev/blog/post_javascript_no_more.html</link>
       <description>Some of you will be happy to hear that this blog no longer replies on JavaScript to work. The way that things work now is that everytime I push to the repo, a GitHub Action is run which runs a Go script that I wrote.&lt;br&gt;This Go script generates the html pages for all the blog posts using the template that I have. It also remakes the index.html page to make sure the list of blog posts there is up to date. Now that the visitor&#39;s browser doesnt run JavaScript code to load the blog content, posts should load a bit faster, but you probably wont notice this unless you are on old hardware.</description>
     </item>
     <item>
       <title>DNS over TLS</title>
-      <link>https://j1233.minetest.land/blog/post_dns_over_tls.html</link>
+      <link>https://www.j45.dev/blog/post_dns_over_tls.html</link>
       <description>This is a blog post that I have wanted to make recently, after finding very little information online about how DNS over TLS (DoT) requests are formatted. What I have learnt while researching for &lt;a href=&#34;https://github.com/Minetest-j45/dothole&#34;&gt;my project&lt;/a&gt; is that DoT requests/respones only differ from normal DNS requests in one manner.&lt;br&gt;This difference is that the first 2 bytes of the message are the length of the rest of the message. These two length bytes are prepended to the message which is then sent with TLS. This is mentioned in the RFC, &lt;a href=&#34;https://www.rfc-editor.org/rfc/rfc7858.html#section-3.3&#34;&gt;as seen here&lt;/a&gt;, but I didnt see this at first, leading to some errors. I hope this information is useful or atleast interesting to someone out there.</description>
     </item>
     <item>
       <title>Update</title>
-      <link>https://j1233.minetest.land/blog/post_update.html</link>
+      <link>https://www.j45.dev/blog/post_update.html</link>
       <description>This is just a post updating you on how I will be using this blog system in the future and the changes I have made. As you may have noticed, my website has recently gone through many UI changes, this is as a part of my scheme to revamp my website. Along with this, I plan on changing the way my blog works, I plan on it focusing more on technology, and less about me. Soon, I will make the blog more intuitive and make it have more features, such as the links and images I promised in the prior post. I will also make new posts as soon as I get some ideas.</description>
     </item>
     <item>
       <title>Feeds!</title>
-      <link>https://j1233.minetest.land/blog/post_feeds!.html</link>
-      <description>I have successfully made feeds that are automatically generated/updated when I make a new blog post (&lt;a href=&#34;https://j1233.minetest.land/blog/feed.json&#34;&gt;JSON feed&lt;/a&gt; and &lt;a href=&#34;https://j1233.minetest.land/blog/feed.rss&#34;&gt;RSS feed&lt;/a&gt;). The way this feed generation currently works is that every time that I push a new post (or when the blog posts csv file is changed) to the GitHub repo, a GitHub Action runs, which reads the blog posts csv file and then parses and converts the information it contains into feeds using &lt;a href=&#34;https://pkg.go.dev/github.com/gorilla/feeds&#34;&gt;a very cool Golang package&lt;/a&gt; that I found. I will hopefully soon add some features such as links and images to make posts easier on the eyes.</description>
+      <link>https://www.j45.dev/blog/post_feeds!.html</link>
+      <description>I have successfully made feeds that are automatically generated/updated when I make a new blog post (&lt;a href=&#34;https://www.j45.dev/blog/feed.json&#34;&gt;JSON feed&lt;/a&gt; and &lt;a href=&#34;https://www.j45.dev/blog/feed.rss&#34;&gt;RSS feed&lt;/a&gt;). The way this feed generation currently works is that every time that I push a new post (or when the blog posts csv file is changed) to the GitHub repo, a GitHub Action runs, which reads the blog posts csv file and then parses and converts the information it contains into feeds using &lt;a href=&#34;https://pkg.go.dev/github.com/gorilla/feeds&#34;&gt;a very cool Golang package&lt;/a&gt; that I found. I will hopefully soon add some features such as links and images to make posts easier on the eyes.</description>
     </item>
     <item>
       <title>Blog Working</title>
-      <link>https://j1233.minetest.land/blog/post_blog_working.html</link>
-      <description>I am happy that this basic blogging system is now working. I will briefly explain how everything is currently working, all the blogs (along with their date and title) are currently stored in &lt;a href=&#34;https://j1233.minetest.land/blog/blogs.csv&#34;&gt;a csv file&lt;/a&gt; and when someone visits this site, that file is read and the information it contains is displayed in their brower. This system does rely on client-side JavaScript however for the large majority of people, this shouldn&#39;t be an issue, as most websites also rely on it. To make a new blog post, I add a new line to the bottom of the csv file which contains all the information about the post.</description>
+      <link>https://www.j45.dev/blog/post_blog_working.html</link>
+      <description>I am happy that this basic blogging system is now working. I will briefly explain how everything is currently working, all the blogs (along with their date and title) are currently stored in &lt;a href=&#34;https://www.j45.dev/blog/blogs.csv&#34;&gt;a csv file&lt;/a&gt; and when someone visits this site, that file is read and the information it contains is displayed in their brower. This system does rely on client-side JavaScript however for the large majority of people, this shouldn&#39;t be an issue, as most websites also rely on it. To make a new blog post, I add a new line to the bottom of the csv file which contains all the information about the post.</description>
     </item>
     <item>
       <title>Hello World!</title>
-      <link>https://j1233.minetest.land/blog/post_hello_world!.html</link>
+      <link>https://www.j45.dev/blog/post_hello_world!.html</link>
       <description>This is my first ever blog post and is sort of just a test.</description>
     </item>
   </channel>

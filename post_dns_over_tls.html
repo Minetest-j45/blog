@@ -7,17 +7,17 @@ title: j45's Blog
 <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://j1233.minetest.land/css/index.css?v=1.0">
-    <link rel="icon" href="https://j1233.minetest.land/images/j45.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.j45.dev/css/index.css?v=1.0">
+    <link rel="icon" href="https://www.j45.dev/images/j45.png" type="image/x-icon">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="j45's Blog">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="http://j1233.minetest.land/">
+    <meta property="og:url" content="http://www.j45.dev/">
     <meta property="og:title" content="j45">
     <meta name="og:description" content="Hi, I'm j45(he/him). I am 17 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.">
-    <meta name="og:image" content="https://j1233.minetest.land/images/bigj45.png">
+    <meta name="og:image" content="https://www.j45.dev/images/bigj45.png">
 
     <title>{{ page.title }}</title>
 
@@ -80,11 +80,11 @@ title: j45's Blog
         <div class="blogs">
 			<br>
 
-<bigtext>DNS over TLS</bigtext> - 2 April 2023<a href='https://j1233.minetest.land/blog/'><exit style='color: #000;'>X</exit></a><br><p>This is a blog post that I have wanted to make recently, after finding very little information online about how DNS over TLS (DoT) requests are formatted. What I have learnt while researching for <a href="https://github.com/Minetest-j45/dothole">my project</a> is that DoT requests/respones only differ from normal DNS requests in one manner.<br>This difference is that the first 2 bytes of the message are the length of the rest of the message. These two length bytes are prepended to the message which is then sent with TLS. This is mentioned in the RFC, <a href="https://www.rfc-editor.org/rfc/rfc7858.html#section-3.3">as seen here</a>, but I didnt see this at first, leading to some errors. I hope this information is useful or atleast interesting to someone out there.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j1233.minetest.land/blog/post_dns_over_tls.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://j1233.minetest.land/blog/'><img src='https://j1233.minetest.land/images/return.png' style='cursor: pointer;'></a>
+<bigtext>DNS over TLS</bigtext> - 2 April 2023<a href='https://www.j45.dev/blog/'><exit style='color: #000;'>X</exit></a><br><p>This is a blog post that I have wanted to make recently, after finding very little information online about how DNS over TLS (DoT) requests are formatted. What I have learnt while researching for <a href="https://github.com/Minetest-j45/dothole">my project</a> is that DoT requests/respones only differ from normal DNS requests in one manner.<br>This difference is that the first 2 bytes of the message are the length of the rest of the message. These two length bytes are prepended to the message which is then sent with TLS. This is mentioned in the RFC, <a href="https://www.rfc-editor.org/rfc/rfc7858.html#section-3.3">as seen here</a>, but I didnt see this at first, leading to some errors. I hope this information is useful or atleast interesting to someone out there.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://www.j45.dev/blog/post_dns_over_tls.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://www.j45.dev/blog/'><img src='https://www.j45.dev/images/return.png' style='cursor: pointer;'></a>
 
         </div>
 		<br>
-		<a href="https://github.com/Minetest-j45/blog" title="Blog Repo" rel="me" class="repo"> <img alt="GitHub Repo" src="https://j1233.minetest.land/images/repo.png" width="96px" height="32px" /></a><br><br>
+		<a href="https://github.com/Minetest-j45/blog" title="Blog Repo" rel="me" class="repo"> <img alt="GitHub Repo" src="https://www.j45.dev/images/repo.png" width="96px" height="32px" /></a><br><br>
 		{% include footer.html %}
     </center>
 </body>
