@@ -14,13 +14,13 @@ type Blog struct {
 
 func makeTitles(posts []Blog) (titles []string) {
 	for _, post := range posts {
-		titles = append(titles, "<div class='blog'><br><a href='https://www.j45.dev/blog/post_"+strings.ToLower(strings.ReplaceAll(post.Title, " ", "_"))+".html' style='text-decoration: none; color: #000;'><mybutton>"+post.Title+"</mybutton></a></div>")
+		titles = append(titles, "<div class='blog'><br><a href='https://j45.dev/blog/post_"+strings.ToLower(strings.ReplaceAll(post.Title, " ", "_"))+".html' style='text-decoration: none; color: #000;'><mybutton>"+post.Title+"</mybutton></a></div>")
 	}
 	return titles
 }
 
 func makePost(post Blog) (content string) {
-	return "<bigtext>" + post.Title + "</bigtext> - " + post.Date + "<a href='https://www.j45.dev/blog/'><exit style='color: #000;'>X</exit></a><br><p>" + post.Text + "</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://www.j45.dev/blog/post_" + strings.ToLower(strings.ReplaceAll(post.Title, " ", "_")) + ".html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://www.j45.dev/blog/'><img src='https://www.j45.dev/images/return.png' style='cursor: pointer;'></a>"
+	return "<bigtext>" + post.Title + "</bigtext> - " + post.Date + "<a href='https://j45.dev/blog/'><exit style='color: #000;'>X</exit></a><br><p>" + post.Text + "</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j45.dev/blog/post_" + strings.ToLower(strings.ReplaceAll(post.Title, " ", "_")) + ".html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://j45.dev/blog/'><img src='https://j45.dev/images/return.png' style='cursor: pointer;'></a>"
 }
 
 func main() {

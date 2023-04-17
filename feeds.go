@@ -17,7 +17,7 @@ type Blog struct {
 func main() {
 	feed := &feeds.Feed{
 		Title:       "j45's Blog",
-		Link:        &feeds.Link{Href: "https://www.j45.dev/blog/"},
+		Link:        &feeds.Link{Href: "https://j45.dev/blog/"},
 		Description: "j45's Blog",
 		Author:      &feeds.Author{Name: "j45"},
 		Created:     time.Now(),
@@ -52,7 +52,7 @@ func main() {
 		feedItems = append(feedItems,
 			&feeds.Item{
 				Title:       blog.Title,
-				Link:        &feeds.Link{Href: "https://www.j45.dev/blog/post_" + strings.ToLower(strings.ReplaceAll(blog.Title, " ", "_")) + ".html"},
+				Link:        &feeds.Link{Href: "https://j45.dev/blog/post_" + strings.ToLower(strings.ReplaceAll(blog.Title, " ", "_")) + ".html"},
 				Description: blog.Text,
 			})
 	}

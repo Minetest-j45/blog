@@ -7,17 +7,17 @@ title: j45's Blog
 <head>
     <meta charset="utf-8">
 
-    <link rel="stylesheet" href="https://www.j45.dev/css/index.css?v=1.0">
-    <link rel="icon" href="https://www.j45.dev/images/j45.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://j45.dev/css/index.css?v=1.0">
+    <link rel="icon" href="https://j45.dev/images/j45.png" type="image/x-icon">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="j45's Blog">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.j45.dev/">
+    <meta property="og:url" content="https://j45.dev/">
     <meta property="og:title" content="j45">
     <meta name="og:description" content="Hi, I'm j45(he/him). I am 17 years old and I live in England; in my free time, I like to program, play video games or hang out with friends.">
-    <meta name="og:image" content="https://www.j45.dev/images/bigj45.png">
+    <meta name="og:image" content="https://j45.dev/images/bigj45.png">
 
     <title>{{ page.title }}</title>
 
@@ -80,11 +80,11 @@ title: j45's Blog
         <div class="blogs">
 			<br>
 
-<bigtext>Feeds!</bigtext> - 6 March 2022<a href='https://www.j45.dev/blog/'><exit style='color: #000;'>X</exit></a><br><p>I have successfully made feeds that are automatically generated/updated when I make a new blog post (<a href="https://www.j45.dev/blog/feed.json">JSON feed</a> and <a href="https://www.j45.dev/blog/feed.rss">RSS feed</a>). The way this feed generation currently works is that every time that I push a new post (or when the blog posts csv file is changed) to the GitHub repo, a GitHub Action runs, which reads the blog posts csv file and then parses and converts the information it contains into feeds using <a href="https://pkg.go.dev/github.com/gorilla/feeds">a very cool Golang package</a> that I found. I will hopefully soon add some features such as links and images to make posts easier on the eyes.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://www.j45.dev/blog/post_feeds!.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://www.j45.dev/blog/'><img src='https://www.j45.dev/images/return.png' style='cursor: pointer;'></a>
+<bigtext>Feeds!</bigtext> - 6 March 2022<a href='https://j45.dev/blog/'><exit style='color: #000;'>X</exit></a><br><p>I have successfully made feeds that are automatically generated/updated when I make a new blog post (<a href="https://j45.dev/blog/feed.json">JSON feed</a> and <a href="https://j45.dev/blog/feed.rss">RSS feed</a>). The way this feed generation currently works is that every time that I push a new post (or when the blog posts csv file is changed) to the GitHub repo, a GitHub Action runs, which reads the blog posts csv file and then parses and converts the information it contains into feeds using <a href="https://pkg.go.dev/github.com/gorilla/feeds">a very cool Golang package</a> that I found. I will hopefully soon add some features such as links and images to make posts easier on the eyes.</p><br><myButton onclick='function copy() { navigator.clipboard.writeText(`https://j45.dev/blog/post_feeds!.html`); alert(`Copied blog post link to clipboard`); }; copy();'>Share this blog post!</myButton><br><a href='https://j45.dev/blog/'><img src='https://j45.dev/images/return.png' style='cursor: pointer;'></a>
 
         </div>
 		<br>
-		<a href="https://github.com/Minetest-j45/blog" title="Blog Repo" rel="me" class="repo"> <img alt="GitHub Repo" src="https://www.j45.dev/images/repo.png" width="96px" height="32px" /></a><br><br>
+		<a href="https://github.com/Minetest-j45/blog" title="Blog Repo" rel="me" class="repo"> <img alt="GitHub Repo" src="https://j45.dev/images/repo.png" width="96px" height="32px" /></a><br><br>
 		{% include footer.html %}
     </center>
 </body>
